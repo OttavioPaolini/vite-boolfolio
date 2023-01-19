@@ -18,15 +18,9 @@ export default{
 <div class="card" >
     <div class="card-body">
         <h2 >{{project.title}}</h2>
-
-
-
-
-
         <p v-if="project.type ">{{ project.type.name }}</p>
         <p v-else>Nessuna tipologia</p>
-
-        <img v-if="project.cover_image" :src="`${urlLaravel}/storage/${project.cover_image}`" alt="">
+        <img class="w-50" v-if="project.cover_image" :src="`${urlLaravel}/storage/${project.cover_image}`" alt="">
         <p v-else>Nessuna Immagine Trovata</p>
     </div>
 </div>
